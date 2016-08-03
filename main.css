@@ -1,0 +1,72 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+body {
+  background-image: url(/images/beach.jpg)
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-family: 'Schoolbell', cursive;
+  font-size: 40px;
+}
+
+tr:nth-child(1) td:nth-child(1) {
+  border-right: 4px solid #92714E;
+  border-bottom: 4px solid #92714E;
+}
+
+tr:nth-child(1) td:nth-child(2) {
+  border-bottom: 4px solid #92714E;
+}
+
+tr:nth-child(1) td:nth-child(3) {
+  border-left: 4px solid #92714E;
+  border-bottom: 4px solid #92714E;
+}
+
+tr:nth-child(2) td:nth-child(1) {
+  border-right: 4px solid #92714E;
+  border-bottom: 4px solid #92714E;
+}
+
+tr:nth-child(2) td:nth-child(2) {
+  border-right: 4px solid #92714E;
+  border-bottom: 4px solid #92714E;
+}
+
+tr:nth-child(2) td:nth-child(3) {
+  border-bottom: 4px solid #92714E;
+}
+
+tr:nth-child(3) td:nth-child(1) {
+  border-right: 4px solid #92714E;
+}
+
+tr:nth-child(3) td:nth-child(2) {
+  border-right: 4px solid #92714E
+}
+
+h1 {
+  text-align: center;
+  color: #FB5D5C;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 55px;
+  padding-bottom: .5em;
+}
+
+p {
+  color: #44D2C9;
+}
+
+.message {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 30px;
+  color: #03484F;
+  text-align: center;
+  padding-top: .5em;
+}
