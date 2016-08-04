@@ -68,7 +68,12 @@ p {
   font-size: 30px;
   color: #03484F;
   text-align: center;
-  padding-top: .5em;
+  padding-top: 1.75em;
+}
+
+.message img {
+  height: 44px;
+  width: 44px;
 }
 
 td.X {

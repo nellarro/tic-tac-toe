@@ -18,7 +18,11 @@ const drawBoard = () => {
       cell.className = cellValues[col]
     }
   }
-  document.querySelector('.message').textContent = `It's ${cellValues[playerTurn]}'s turn.`
+  if (playerTurn === O) {
+    document.querySelector('.message').innerHTML = `It's <img src = ${'images/starfish.png'}> 's turn.`
+  } else {
+    document.querySelector('.message').innerHTML = `It's <img src =  ${'images/crab.png'} >  's turn.`
+  }
 }
 
 const play = (row, col, player) => {
