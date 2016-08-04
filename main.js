@@ -13,17 +13,19 @@ const drawBoard = () => {
     for (let j = 0; j < state[i].length; j++) {
       const col = state[i][j]
       const cell = document.querySelector(
-        `table tr:nth-child(${i+1}) td:nth-child(${j+1})`
+        `table tr:nth-child(${i + 1}) td:nth-child(${j + 1})`
       )
-      cell.textContent = cellValues[col]
+      cell.className = cellValues[col]
     }
   }
   document.querySelector('.message').textContent = `It's ${cellValues[playerTurn]}'s turn.`
 }
 
 const play = (row, col, player) => {
-  state[row][col] = player
-  playerTurn = player === X ? O : X
+  if (state[row][col] === 0) {
+    state[row][col] = player
+    playerTurn = player === X ? O : X
+  }
 }
 
 const init = () => {
