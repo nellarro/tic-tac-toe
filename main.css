@@ -4,7 +4,7 @@ table {
   border-collapse: collapse;
 }
 body {
-  background-image: url(/images/beach.jpg)
+  background-image: url(./images/beach.jpg);
 }
 
 td {
